@@ -36,6 +36,9 @@ function findById(id, animalsArray) {
     return result
 }
 
+
+// Retrieve information from the API
+
 app.get('/api/animals', (req, res) => {
     let results = animals;
     if (req.query) {
@@ -54,6 +57,13 @@ app.get('/api/animals/:id', (req, res) => {
     }
 });
 
+// Add informaton to the API
+app.post('/api/animals', (req, res) => {
+    console.log(req.body);
+    res.json(req.body);
+});
+
+// Choose server port connection
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
