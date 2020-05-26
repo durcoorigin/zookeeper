@@ -36,7 +36,9 @@ function findById(id, animalsArray) {
     return result
 }
 
+
 // Retrieve information from the API
+
 app.get('/api/animals', (req, res) => {
     let results = animals;
     if (req.query) {
