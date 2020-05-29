@@ -126,6 +126,16 @@
         "hungry"
       ],
       "id": "12"
+    },
+    {
+      "name": "Ringo",
+      "species": "Monkey",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "zany",
+        "goofy"
+      ],
+      "id": "13"
     }
   ]
 }
